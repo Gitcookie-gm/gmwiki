@@ -57,7 +57,7 @@
 // 侧栏目录：滚动高亮当前章节
 (function () {
   function init() {
-    var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+    var links = Array.prototype.slice.call(document.querySelectorAll('.topnav .tnav'));
     if (!links.length) return;
     var map = {}, hs = [];
     links.forEach(function (a) {
@@ -86,8 +86,8 @@
   var input = document.getElementById('site-search');
   var box = document.getElementById('search-results');
   var IDX = window.LVW_INDEX || [];
-  var TOP = { '契约': 1, '魔物': 1, '人物': 1, '国家': 1 };
-  var KINDW = { '契约': 1, '魔物': 1, '人物': 1, '国家': 1, '商品': 1, '等级': 1, '徽记': 1, '货源': 1 };
+  var TOP = { '契约': 1, '魔物': 1, '人物': 1, '国家': 1, '技能': 1 };
+  var KINDW = { '契约': 1, '魔物': 1, '人物': 1, '国家': 1, '商品': 1, '等级': 1, '徽记': 1, '货源': 1, '技能': 1 };
 
   function esc(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
@@ -163,4 +163,18 @@
   }
 
   form.addEventListener('submit', function (e) { e.preventDefault(); run(); });
+})();
+
+
+// 顶部导航栏高度测量（供侧栏粘性定位使用）
+(function () {
+  function sync() {
+    var bar = document.querySelector('.topbar');
+    if (!bar) return;
+    document.documentElement.style.setProperty('--topbar-h', bar.offsetHeight + 'px');
+  }
+  sync();
+  window.addEventListener('load', sync);
+  window.addEventListener('resize', sync);
+  window.addEventListener('orientationchange', sync);
 })();
