@@ -2,21 +2,52 @@
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>角色创建指南 · 光幕之下</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif+SC:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head><body>
 <div class="topbar"><div class="inner">
 <a class="brand" href="index.html">光幕之下 <b>· WIKI</b></a>
 <a class="navlink" href="recommend.html">推荐知识</a><a class="navlink" href="lore.html">世界观</a><a class="navlink" href="system.html">系统基础</a><a class="navlink" href="contracts.html">契约图鉴</a><a class="navlink" href="bestiary.html">魔物图鉴</a><a class="navlink" href="social.html">社交</a><a class="navlink active" href="characters.html">角色</a><a class="navlink" href="crafting.html">制作采集</a><a class="navlink" href="misc.html">其他内容</a><a class="navlink" href="dm.html">幕后</a><a class="navlink" href="equipment.html">装备</a><a class="navlink" href="versions.html">版本介绍</a>
 
 </div></div>
-<div class="container">
+<div class="container with-side">
+<aside class="sidebar"><div class="side-inner"><nav class="toc"><div class="toc-title">本页目录</div>
+<a class="toc-l2" href="#身份识别">【身份识别】</a>
+<a class="toc-l2" href="#基础信息登记">【基础信息登记】</a>
+<a class="toc-l2" href="#属性分配-70-点总池">【属性分配 · 70 点总池】</a>
+<a class="toc-l3" href="#七大属性可视化分配表">💎 七大属性可视化分配表</a>
+<a class="toc-l2" href="#战斗属性预览-自动计算">【战斗属性预览 · 自动计算】</a>
+<a class="toc-l3" href="#衍生属性计算器">📊 衍生属性计算器</a>
+<a class="toc-l2" href="#初始契约-选择界面">【初始契约 · 选择界面】</a>
+<a class="toc-l3" href="#契约选择模拟器">🌟 契约选择模拟器</a>
+<a class="toc-l3" href="#新手三选一对比表">🎯 新手三选一对比表</a>
+<a class="toc-l2" href="#经验与等级-进度系统">【经验与等级 · 进度系统】</a>
+<a class="toc-l3" href="#等级进度可视化">🎮 等级进度可视化</a>
+<a class="toc-l3" href="#经验值获取途径">💎 经验值获取途径</a>
+<a class="toc-l2" href="#职业-流派-可视化面板">【职业 / 流派 · 可视化面板】</a>
+<a class="toc-l3" href="#三种流派详细对比">🎮 三种流派详细对比</a>
+<a class="toc-l2" href="#角色背景设定-安全版">【角色背景设定 · 安全版】</a>
+<a class="toc-l3" href="#穿越机制详解-PC-版">🌀 穿越机制详解（PC 版）</a>
+<a class="toc-l3" href="#执念模板库">🎯 执念模板库</a>
+<a class="toc-l3" href="#初始状态设定">🎬 初始状态设定</a>
+<a class="toc-l2" href="#战斗准备-初始装备清单">【战斗准备 · 初始装备清单】</a>
+<a class="toc-l3" href="#装备配置模板">🎒 装备配置模板</a>
+<a class="toc-l3" href="#战斗风格自评表">🎭 战斗风格自评表</a>
+<a class="toc-l2" href="#角色确认-最终检查">【角色确认 · 最终检查】</a>
+<a class="toc-l3" href="#创建完成检查清单">✅ 创建完成检查清单</a>
+<a class="toc-l2" href="#角色卡预览-最终成品">【角色卡预览 · 最终成品】</a>
+</nav></div></aside>
+<div class="main">
 
 <div class="header">
   <h1>角色创建指南<small>PC 角色创建界面</small></h1>
   
 </div>
 <div class="content">
-<nav class="toc"><span class="toc-t">📑 本页目录</span><a href="#身份识别">【身份识别】</a><a href="#基础信息登记">【基础信息登记】</a><a href="#属性分配-70-点总池">【属性分配 · 70 点总池】</a><a href="#战斗属性预览-自动计算">【战斗属性预览 · 自动计算】</a><a href="#初始契约-选择界面">【初始契约 · 选择界面】</a><a href="#经验与等级-进度系统">【经验与等级 · 进度系统】</a><a href="#职业-流派-可视化面板">【职业 / 流派 · 可视化面板】</a><a href="#角色背景设定-安全版">【角色背景设定 · 安全版】</a><a href="#战斗准备-初始装备清单">【战斗准备 · 初始装备清单】</a><a href="#角色确认-最终检查">【角色确认 · 最终检查】</a><a href="#角色卡预览-最终成品">【角色卡预览 · 最终成品】</a></nav><h1>🎴《光幕之下》PC 角色创建指南 · v4.1 游戏界面版</h1>
+<h1>🎴《光幕之下》PC 角色创建指南 · v4.1 游戏界面版</h1>
 <blockquote><strong>版本</strong>: v4.1 | <strong>最后更新</strong>: 2026-10-07 | <strong>定位</strong>: PC 玩家可见</blockquote>
 <blockquote>✦ 设计理念 ✦ 这不是普通的角色卡，而是一个完整的 <strong>角色创建与养成界面</strong>， 仿照主流 RPG 游戏的设计语言，让玩家能像玩游戏一样创建角色。</blockquote>
 <hr>
@@ -35,28 +66,10 @@
 ╚═══════════════════════════════════════════════════════════════╝</code></pre>
 <hr>
 </div><div class="card-block"><h2 id="基础信息登记">【基础信息登记】</h2>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">┌──────────────────────────────────────────────────────────────┐</div>
-<div class="y-p" style="padding-left:0px">│                     📇 角色档案表                             │</div>
-<div class="y-p" style="padding-left:0px">├──────────────────────────────────────────────────────────────┤</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  姓名</span>：<span class="y-v">____________________  年龄: ____  性别: __________  │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  穿越前职业</span>：<span class="y-v">____________________________________________     │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  远方世界</span>：<span class="y-v">地球·________________________________________     │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  🎯 核心执念 (一句话描述)</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│  ________________________________________________________________</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  ⚔️ 选择流派 (圈选)</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│      [ A ] 近战突击型    [ B ] 法术爆发型    [ C ] 策略支援型 │</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  📜 初始契约 (从 54 种中选择)</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│      _______________________________________________________ │</div>
-<div class="y-p" style="padding-left:0px">└──────────────────────────────────────────────────────────────┘</div>
-</div>
+<div class="yaml-block"><div class="ycard"><p class="yp">┌──────────────────────────────────────────────────────────────┐</p><p class="yp">│                     📇 角色档案表                             │</p><p class="yp">├──────────────────────────────────────────────────────────────┤</p><div class="ykv"><span class="ykey">│  姓名</span><span class="yval">____________________  年龄: ____  性别: __________  │</span></div><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  穿越前职业</span><span class="yval">____________________________________________     │</span></div><div class="ykv"><span class="ykey">│  远方世界</span><span class="yval">地球·________________________________________     │</span></div><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  🎯 核心执念 (一句话描述)</span><span class="yval">│</span></div><p class="yp">│  ________________________________________________________________</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  ⚔️ 选择流派 (圈选)</span><span class="yval">│</span></div><p class="yp">│      [ A ] 近战突击型    [ B ] 法术爆发型    [ C ] 策略支援型 │</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  📜 初始契约 (从 54 种中选择)</span><span class="yval">│</span></div><p class="yp">│      _______________________________________________________ │</p><p class="yp">└──────────────────────────────────────────────────────────────┘</p></div></div>
 <hr>
 </div><div class="card-block"><h2 id="属性分配-70-点总池">【属性分配 · 70 点总池】</h2>
-<h3>💎 七大属性可视化分配表</h3>
+<h3 id="七大属性可视化分配表">💎 七大属性可视化分配表</h3>
 <p>┌─────────────────────────────────────────────────────────────────┐</p>
 <p>│ 属性     范围    已分配    影响                                    │</p>
 <p>├─────────────────────────────────────────────────────────────────┤</p>
@@ -147,45 +160,11 @@
 优缺点: 后期可达成极致专精</code></pre>
 <hr>
 </div><div class="card-block"><h2 id="战斗属性预览-自动计算">【战斗属性预览 · 自动计算】</h2>
-<h3>📊 衍生属性计算器</h3>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">┌──────────────────────────────────────────────────────────────┐</div>
-<div class="y-p" style="padding-left:0px">│                  ⚔️ 衍生战斗属性面板                          │</div>
-<div class="y-p" style="padding-left:0px">├──────────────────────────────────────────────────────────────┤</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  ❤️ 生命值 (HP)</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     体魄 ___ × 5 = ___                                       │</div>
-<div class="y-p" style="padding-left:0px">│     力量 ___ × 2 = ___                                       │</div>
-<div class="y-p" style="padding-left:0px">│     ──────────────                                           │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     总计</span>：<span class="y-v">___                                                 │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  💠 魔力值 (MP)</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     灵力 ___ × 5 = ___                                       │</div>
-<div class="y-p" style="padding-left:0px">│     意志 ___ × 2 = ___                                       │</div>
-<div class="y-p" style="padding-left:0px">│     ──────────────                                           │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     总计</span>：<span class="y-v">___                                                 │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  🛡️ 防御等级 (AC)</span>：<span class="y-v">│</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     基础值</span>：<span class="y-v">10                                               │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     敏捷修正</span>：<span class="y-v">___ (敏捷÷2 -5)                                │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     护甲加值</span>：<span class="y-v">___ (装备后填写)                               │</span></div>
-<div class="y-p" style="padding-left:0px">│     ──────────────                                           │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     总计</span>：<span class="y-v">___                                                 │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  🏃 移动速度</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     敏捷 ___ × 5 = ___ 英尺/轮                                 │</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  📦 负重上限</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     力量 ___ × 4 = ___ 磅                                    │</div>
-<div class="y-p" style="padding-left:0px">│     体魄 ___ × 2 = ___ 磅                                    │</div>
-<div class="y-p" style="padding-left:0px">│     体型 ___ × 5 = ___ 磅                                    │</div>
-<div class="y-p" style="padding-left:0px">│     ──────────────                                           │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     总计</span>：<span class="y-v">___ 磅                                              │</span></div>
-<div class="y-p" style="padding-left:0px">└──────────────────────────────────────────────────────────────┘</div>
-</div>
+<h3 id="衍生属性计算器">📊 衍生属性计算器</h3>
+<div class="yaml-block"><div class="ycard"><p class="yp">┌──────────────────────────────────────────────────────────────┐</p><p class="yp">│                  ⚔️ 衍生战斗属性面板                          │</p><p class="yp">├──────────────────────────────────────────────────────────────┤</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  ❤️ 生命值 (HP)</span><span class="yval">│</span></div><p class="yp">│     体魄 ___ × 5 = ___                                       │</p><p class="yp">│     力量 ___ × 2 = ___                                       │</p><p class="yp">│     ──────────────                                           │</p><div class="ykv"><span class="ykey">│     总计</span><span class="yval">___                                                 │</span></div><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  💠 魔力值 (MP)</span><span class="yval">│</span></div><p class="yp">│     灵力 ___ × 5 = ___                                       │</p><p class="yp">│     意志 ___ × 2 = ___                                       │</p><p class="yp">│     ──────────────                                           │</p><div class="ykv"><span class="ykey">│     总计</span><span class="yval">___                                                 │</span></div><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  🛡️ 防御等级 (AC)</span><span class="yval">│</span></div><div class="ykv"><span class="ykey">│     基础值</span><span class="yval">10                                               │</span></div><div class="ykv"><span class="ykey">│     敏捷修正</span><span class="yval">___ (敏捷÷2 -5)                                │</span></div><div class="ykv"><span class="ykey">│     护甲加值</span><span class="yval">___ (装备后填写)                               │</span></div><p class="yp">│     ──────────────                                           │</p><div class="ykv"><span class="ykey">│     总计</span><span class="yval">___                                                 │</span></div><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  🏃 移动速度</span><span class="yval">│</span></div><p class="yp">│     敏捷 ___ × 5 = ___ 英尺/轮                                 │</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  📦 负重上限</span><span class="yval">│</span></div><p class="yp">│     力量 ___ × 4 = ___ 磅                                    │</p><p class="yp">│     体魄 ___ × 2 = ___ 磅                                    │</p><p class="yp">│     体型 ___ × 5 = ___ 磅                                    │</p><p class="yp">│     ──────────────                                           │</p><div class="ykv"><span class="ykey">│     总计</span><span class="yval">___ 磅                                              │</span></div><p class="yp">└──────────────────────────────────────────────────────────────┘</p></div></div>
 <hr>
 </div><div class="card-block"><h2 id="初始契约-选择界面">【初始契约 · 选择界面】</h2>
-<h3>🌟 契约选择模拟器</h3>
+<h3 id="契约选择模拟器">🌟 契约选择模拟器</h3>
 <pre><code>╔══════════════════════════════════════════════════════════════╗
 ║                  📜 契约选择界面                              ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -217,11 +196,11 @@
 ║  ─────────────────────────────────────                       ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝</code></pre>
-<h3>🎯 新手三选一对比表</h3>
+<h3 id="新手三选一对比表">🎯 新手三选一对比表</h3>
 <table><tr><th><strong>维度</strong></th><th><strong>【跃行】空间操纵</strong></th><th><strong>【萌生新芽】治疗恢复</strong></th><th><strong>【茧】防御自保</strong></th></tr><tr><td>上手难度</td><td>⭐⭐</td><td>⭐</td><td>⭐⭐</td></tr><tr><td>团队价值</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td></tr><tr><td>单挑能力</td><td>⭐⭐</td><td>⭐</td><td>⭐⭐⭐⭐</td></tr><tr><td>探索能力</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐</td></tr><tr><td>后期潜力</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr></table>
 <hr>
 </div><div class="card-block"><h2 id="经验与等级-进度系统">【经验与等级 · 进度系统】</h2>
-<h3>🎮 等级进度可视化</h3>
+<h3 id="等级进度可视化">🎮 等级进度可视化</h3>
 <pre><code>╔══════════════════════════════════════════════════════════════╗
 ║                  📈 等级进度仪表盘                            ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -246,36 +225,11 @@
 ║    ⏳ 0 阶解锁: 终极形态                                     ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝</code></pre>
-<h3>💎 经验值获取途径</h3>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">┌──────────────────────────────────────────────────────────────┐</div>
-<div class="y-p" style="padding-left:0px">│                 ⚡ 经验值获取途径                              │</div>
-<div class="y-p" style="padding-left:0px">├──────────────────────────────────────────────────────────────┤</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-p" style="padding-left:0px">│  🎯 战斗获取                                                │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 击败低阶魔物</span>：<span class="y-v">1-3 经验                                │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 击败中阶魔物</span>：<span class="y-v">5-10 经验                               │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 击败高阶魔物</span>：<span class="y-v">15-30 经验                              │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 击败敌对执契者</span>：<span class="y-v">20-50 经验                            │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-p" style="padding-left:0px">│  📜 任务获取                                                │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 完成主线任务</span>：<span class="y-v">30-100 经验                              │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 完成支线任务</span>：<span class="y-v">10-30 经验                              │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 完成隐藏任务</span>：<span class="y-v">50-200 经验                              │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-p" style="padding-left:0px">│  🔍 探索获取                                                │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 首次到达新区域</span>：<span class="y-v">5 经验                                │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 发现隐藏地点</span>：<span class="y-v">3-5 经验                                │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 解开古老谜题</span>：<span class="y-v">10-20 经验                              │</span></div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-p" style="padding-left:0px">│  ⚠️ 经验值惩罚                                               │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 每次死亡</span>：<span class="y-v">扣除当前 20% 经验                           │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│     ▸ 经验不足时</span>：<span class="y-v">下降一阶（已分配属性不变）                 │</span></div>
-<div class="y-p" style="padding-left:0px">└──────────────────────────────────────────────────────────────┘</div>
-</div>
+<h3 id="经验值获取途径">💎 经验值获取途径</h3>
+<div class="yaml-block"><div class="ycard"><p class="yp">┌──────────────────────────────────────────────────────────────┐</p><p class="yp">│                 ⚡ 经验值获取途径                              │</p><p class="yp">├──────────────────────────────────────────────────────────────┤</p><p class="yp">│                                                              │</p><p class="yp">│  🎯 战斗获取                                                │</p><div class="ykv"><span class="ykey">│     ▸ 击败低阶魔物</span><span class="yval">1-3 经验                                │</span></div><div class="ykv"><span class="ykey">│     ▸ 击败中阶魔物</span><span class="yval">5-10 经验                               │</span></div><div class="ykv"><span class="ykey">│     ▸ 击败高阶魔物</span><span class="yval">15-30 经验                              │</span></div><div class="ykv"><span class="ykey">│     ▸ 击败敌对执契者</span><span class="yval">20-50 经验                            │</span></div><p class="yp">│                                                              │</p><p class="yp">│  📜 任务获取                                                │</p><div class="ykv"><span class="ykey">│     ▸ 完成主线任务</span><span class="yval">30-100 经验                              │</span></div><div class="ykv"><span class="ykey">│     ▸ 完成支线任务</span><span class="yval">10-30 经验                              │</span></div><div class="ykv"><span class="ykey">│     ▸ 完成隐藏任务</span><span class="yval">50-200 经验                              │</span></div><p class="yp">│                                                              │</p><p class="yp">│  🔍 探索获取                                                │</p><div class="ykv"><span class="ykey">│     ▸ 首次到达新区域</span><span class="yval">5 经验                                │</span></div><div class="ykv"><span class="ykey">│     ▸ 发现隐藏地点</span><span class="yval">3-5 经验                                │</span></div><div class="ykv"><span class="ykey">│     ▸ 解开古老谜题</span><span class="yval">10-20 经验                              │</span></div><p class="yp">│                                                              │</p><p class="yp">│  ⚠️ 经验值惩罚                                               │</p><div class="ykv"><span class="ykey">│     ▸ 每次死亡</span><span class="yval">扣除当前 20% 经验                           │</span></div><div class="ykv"><span class="ykey">│     ▸ 经验不足时</span><span class="yval">下降一阶（已分配属性不变）                 │</span></div><p class="yp">└──────────────────────────────────────────────────────────────┘</p></div></div>
 <hr>
 </div><div class="card-block"><h2 id="职业-流派-可视化面板">【职业 / 流派 · 可视化面板】</h2>
-<h3>🎮 三种流派详细对比</h3>
+<h3 id="三种流派详细对比">🎮 三种流派详细对比</h3>
 <pre><code>╔══════════════════════════════════════════════════════════════╗
 ║                  ⚔️ A. 近战突击型                             ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -316,60 +270,15 @@
 ╚══════════════════════════════════════════════════════════════╝</code></pre>
 <hr>
 </div><div class="card-block"><h2 id="角色背景设定-安全版">【角色背景设定 · 安全版】</h2>
-<h3>🌀 穿越机制详解（PC 版）</h3>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">┌──────────────────────────────────────────────────────────────┐</div>
-<div class="y-p" style="padding-left:0px">│                  🌀 穿越机制·已知信息                          │</div>
-<div class="y-p" style="padding-left:0px">├──────────────────────────────────────────────────────────────┤</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  📜 你所知道的</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     • 你从远方世界（地球）穿越而来                           │</div>
-<div class="y-p" style="padding-left:0px">│     • 你被某股未知力量召唤（来源未明）                       │</div>
-<div class="y-p" style="padding-left:0px">│     • 这股力量似乎对&quot;执念强烈&quot;的灵魂有特殊感应              │</div>
-<div class="y-p" style="padding-left:0px">│     • 你已在灵廊缔结第一个契约，成为 7 阶执契者             │</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  ❓ 你所不知道的</span>：<span class="y-v">│</span></div>
-<div class="y-p" style="padding-left:0px">│     • 这股力量的真正来源和目的                               │</div>
-<div class="y-p" style="padding-left:0px">│     • 为什么是你被选中                                       │</div>
-<div class="y-p" style="padding-left:0px">│     • 你与这个世界有什么更深层的联系                         │</div>
-<div class="y-p" style="padding-left:0px">│                                                              │</div>
-<div class="y-p" style="padding-left:0px">│  💡 这些谜团将在旅途中逐步揭开...                            │</div>
-<div class="y-p" style="padding-left:0px">└──────────────────────────────────────────────────────────────┘</div>
-</div>
-<h3>🎯 执念模板库</h3>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">【类型 A：寻找与守护】</div>
-<div class="y-p" style="padding-left:0px">□ 找到失踪的亲人/恋人</div>
-<div class="y-p" style="padding-left:0px">□ 证明某个被世人否定的真相</div>
-<div class="y-p" style="padding-left:0px">□ 守护一段珍贵的记忆</div>
-<div class="y-p" style="padding-left:0px">【类型 B：修正与救赎】</div>
-<div class="y-p" style="padding-left:0px">□ 改变过去的一个错误决定</div>
-<div class="y-p" style="padding-left:0px">□ 弥补对某人的亏欠</div>
-<div class="y-p" style="padding-left:0px">□ 阻止一场本该避免的悲剧</div>
-<div class="y-p" style="padding-left:0px">【类型 C：自我与成长】</div>
-<div class="y-p" style="padding-left:0px">□ 证明自己存在的价值</div>
-<div class="y-p" style="padding-left:0px">□ 追寻失落的家族遗产</div>
-<div class="y-p" style="padding-left:0px">□ 解开某个未解之谜</div>
-<div class="y-p" style="padding-left:0px">【类型 D：原创执念】</div>
-<div class="y-p" style="padding-left:0px">□ __________________________________</div>
-<div class="y-p" style="padding-left:0px">□ __________________________________</div>
-<div class="y-p" style="padding-left:0px">✦ 选择执念时，请确保它足够强烈，能驱动你面对生死考验 ✦</div>
-</div>
-<h3>🎬 初始状态设定</h3>
-<div class="kv">
-<div class="y-p" style="padding-left:0px">┌──────────────────────────────────────────────────────────────┐</div>
-<div class="y-p" style="padding-left:0px">│                  🎬 初始状态设定                              │</div>
-<div class="y-p" style="padding-left:0px">├──────────────────────────────────────────────────────────────┤</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  👤 外观</span>：<span class="y-v">简约黑衣（取代了原现代服装）                       │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  ✨ 标识</span>：<span class="y-v">左手腕内侧有淡光纹（原因未知）                     │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  💭 记忆</span>：<span class="y-v">完整保留穿越前所有记忆                             │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  📚 知识</span>：<span class="y-v">对恩格海姆一无所知                                 │</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">│  🎯 目标</span>：<span class="y-v">活下去并找出逃离的方法                             │</span></div>
-<div class="y-p" style="padding-left:0px">└──────────────────────────────────────────────────────────────┘</div>
-</div>
+<h3 id="穿越机制详解-PC-版">🌀 穿越机制详解（PC 版）</h3>
+<div class="yaml-block"><div class="ycard"><p class="yp">┌──────────────────────────────────────────────────────────────┐</p><p class="yp">│                  🌀 穿越机制·已知信息                          │</p><p class="yp">├──────────────────────────────────────────────────────────────┤</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  📜 你所知道的</span><span class="yval">│</span></div><p class="yp">│     • 你从远方世界（地球）穿越而来                           │</p><p class="yp">│     • 你被某股未知力量召唤（来源未明）                       │</p><p class="yp">│     • 这股力量似乎对&quot;执念强烈&quot;的灵魂有特殊感应              │</p><p class="yp">│     • 你已在灵廊缔结第一个契约，成为 7 阶执契者             │</p><p class="yp">│                                                              │</p><div class="ykv"><span class="ykey">│  ❓ 你所不知道的</span><span class="yval">│</span></div><p class="yp">│     • 这股力量的真正来源和目的                               │</p><p class="yp">│     • 为什么是你被选中                                       │</p><p class="yp">│     • 你与这个世界有什么更深层的联系                         │</p><p class="yp">│                                                              │</p><p class="yp">│  💡 这些谜团将在旅途中逐步揭开...                            │</p><p class="yp">└──────────────────────────────────────────────────────────────┘</p></div></div>
+<h3 id="执念模板库">🎯 执念模板库</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">【类型 A</span><span class="yval">寻找与守护】</span></div><p class="yp">□ 找到失踪的亲人/恋人</p><p class="yp">□ 证明某个被世人否定的真相</p><p class="yp">□ 守护一段珍贵的记忆</p><div class="ykv"><span class="ykey">【类型 B</span><span class="yval">修正与救赎】</span></div><p class="yp">□ 改变过去的一个错误决定</p><p class="yp">□ 弥补对某人的亏欠</p><p class="yp">□ 阻止一场本该避免的悲剧</p><div class="ykv"><span class="ykey">【类型 C</span><span class="yval">自我与成长】</span></div><p class="yp">□ 证明自己存在的价值</p><p class="yp">□ 追寻失落的家族遗产</p><p class="yp">□ 解开某个未解之谜</p><div class="ykv"><span class="ykey">【类型 D</span><span class="yval">原创执念】</span></div><p class="yp">□ __________________________________</p><p class="yp">□ __________________________________</p><p class="yp">✦ 选择执念时，请确保它足够强烈，能驱动你面对生死考验 ✦</p></div></div>
+<h3 id="初始状态设定">🎬 初始状态设定</h3>
+<div class="yaml-block"><div class="ycard"><p class="yp">┌──────────────────────────────────────────────────────────────┐</p><p class="yp">│                  🎬 初始状态设定                              │</p><p class="yp">├──────────────────────────────────────────────────────────────┤</p><div class="ykv"><span class="ykey">│  👤 外观</span><span class="yval">简约黑衣（取代了原现代服装）                       │</span></div><div class="ykv"><span class="ykey">│  ✨ 标识</span><span class="yval">左手腕内侧有淡光纹（原因未知）                     │</span></div><div class="ykv"><span class="ykey">│  💭 记忆</span><span class="yval">完整保留穿越前所有记忆                             │</span></div><div class="ykv"><span class="ykey">│  📚 知识</span><span class="yval">对恩格海姆一无所知                                 │</span></div><div class="ykv"><span class="ykey">│  🎯 目标</span><span class="yval">活下去并找出逃离的方法                             │</span></div><p class="yp">└──────────────────────────────────────────────────────────────┘</p></div></div>
 <hr>
 </div><div class="card-block"><h2 id="战斗准备-初始装备清单">【战斗准备 · 初始装备清单】</h2>
-<h3>🎒 装备配置模板</h3>
+<h3 id="装备配置模板">🎒 装备配置模板</h3>
 <pre><code>╔══════════════════════════════════════════════════════════════╗
 ║                  🎒 初始背包配置                              ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -389,20 +298,11 @@
 ║  💰 初始资金: ___ 金币                                        ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝</code></pre>
-<h3>🎭 战斗风格自评表</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">请勾选最贴近你玩法的描述（可多选）</span>：<span class="y-v"></span></div>
-<div class="y-p" style="padding-left:0px">□ ⚔️ 喜欢正面作战，享受剑刃相交的快感</div>
-<div class="y-p" style="padding-left:0px">□ 🔮 更倾向于用魔法解决问题，远程打击敌人</div>
-<div class="y-p" style="padding-left:0px">□ 🛡️ 需要确保团队存活，喜欢站在后排提供支援</div>
-<div class="y-p" style="padding-left:0px">□ 👁️ 擅长观察和分析，喜欢在暗中掌控局势</div>
-<div class="y-p" style="padding-left:0px">□ 💨 喜欢快速移动，打了就跑，不恋战</div>
-<div class="y-p" style="padding-left:0px">□ 🧠 策略型玩家，善于利用环境和规则</div>
-<div class="y-p" style="padding-left:0px">✦ DM 会根据你的选择定制专属剧情线索 ✦</div>
-</div>
+<h3 id="战斗风格自评表">🎭 战斗风格自评表</h3>
+<div class="yaml-block"><h3 class="ysub">请勾选最贴近你玩法的描述（可多选）</h3><div class="ycard"><p class="yp">□ ⚔️ 喜欢正面作战，享受剑刃相交的快感</p><p class="yp">□ 🔮 更倾向于用魔法解决问题，远程打击敌人</p><p class="yp">□ 🛡️ 需要确保团队存活，喜欢站在后排提供支援</p><p class="yp">□ 👁️ 擅长观察和分析，喜欢在暗中掌控局势</p><p class="yp">□ 💨 喜欢快速移动，打了就跑，不恋战</p><p class="yp">□ 🧠 策略型玩家，善于利用环境和规则</p><p class="yp">✦ DM 会根据你的选择定制专属剧情线索 ✦</p></div></div>
 <hr>
 </div><div class="card-block"><h2 id="角色确认-最终检查">【角色确认 · 最终检查】</h2>
-<h3>✅ 创建完成检查清单</h3>
+<h3 id="创建完成检查清单">✅ 创建完成检查清单</h3>
 <pre><code>╔══════════════════════════════════════════════════════════════╗
 ║                  📋 最终检查清单                              ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -437,7 +337,7 @@
 ╚══════════════════════════════════════════════════════════════╝</code></pre>
 <hr>
 <blockquote>✨ <strong>创建完成的角色卡请提交给 DM，开始你的冒险之旅</strong> ✨  💡 <strong>小贴士</strong>：作为异界者，你不是这个世界的主人，而是闯入者。 保持谦逊、保持警惕、保持好奇——这些品质将比任何契约魔法更能保护你。</blockquote></div>
-</div></div>
+</div></div></div>
 <div class="footer">《光幕之下》世界设定百科 · 恩格海姆</div>
 <script src="assets/script.js"></script>
 </body></html>

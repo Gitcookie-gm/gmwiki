@@ -2,179 +2,85 @@
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>系统基础 · 光幕之下</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif+SC:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head><body>
 <div class="topbar"><div class="inner">
 <a class="brand" href="index.html">光幕之下 <b>· WIKI</b></a>
 <a class="navlink" href="recommend.html">推荐知识</a><a class="navlink" href="lore.html">世界观</a><a class="navlink active" href="system.html">系统基础</a><a class="navlink" href="contracts.html">契约图鉴</a><a class="navlink" href="bestiary.html">魔物图鉴</a><a class="navlink" href="social.html">社交</a><a class="navlink" href="characters.html">角色</a><a class="navlink" href="crafting.html">制作采集</a><a class="navlink" href="misc.html">其他内容</a><a class="navlink" href="dm.html">幕后</a><a class="navlink" href="equipment.html">装备</a><a class="navlink" href="versions.html">版本介绍</a>
 
 </div></div>
-<div class="container">
+<div class="container with-side">
+<aside class="sidebar"><div class="side-inner"><nav class="toc"><div class="toc-title">本页目录</div>
+<a class="toc-l2" href="#第一章-角色创建与属性">第一章：角色创建与属性</a>
+<a class="toc-l3" href="#玩家类型与异界者设定">👤 玩家类型与异界者设定</a>
+<a class="toc-l3" href="#核心属性系统-70-点分配制">💎 核心属性系统（70 点分配制）</a>
+<a class="toc-l3" href="#规则说明">规则说明</a>
+<a class="toc-l3" href="#七大核心属性表">七大核心属性表</a>
+<a class="toc-l3" href="#HP-与-MP-计算机制">❤️ HP 与 💠 MP 计算机制</a>
+<a class="toc-l2" href="#第二章-经验值与等级">第二章：经验值与等级</a>
+<a class="toc-l3" href="#升级系统">⭐ 升级系统</a>
+<a class="toc-l2" href="#第三章-死亡与复活">第三章：死亡与复活</a>
+<a class="toc-l3" href="#死亡判定与复活流程">☠️ 死亡判定与复活流程</a>
+<a class="toc-l2" href="#第四章-灵廊">第四章：灵廊</a>
+<a class="toc-l3" href="#核心据点与避难所">🌀 核心据点与避难所</a>
+<a class="toc-l2" href="#第五章-负重与移动">第五章：负重与移动</a>
+<a class="toc-l3" href="#负重限制与机动性">🎒 负重限制与机动性</a>
+<a class="toc-l2" href="#第七章-意志与疯狂">第七章：意志与疯狂</a>
+<a class="toc-l3" href="#精神抗性阈值">🧠 精神抗性阈值</a>
+<a class="toc-l2" href="#第八章-契约与晋升">第八章：契约与晋升</a>
+<a class="toc-l3" href="#54-种契约体系">📜 54 种契约体系</a>
+</nav></div></aside>
+<div class="main">
 <div class="page-banner"><img src="assets/board_system.jpg" alt="系统基础"></div>
 <div class="header">
   <h1>系统基础<small>属性 · 等级 · 死亡 · 灵廊</small></h1>
   
 </div>
 <div class="content">
-<nav class="toc"><span class="toc-t">📑 本页目录</span><a href="#第一章-角色创建与属性">第一章：角色创建与属性</a><a href="#第二章-经验值与等级">第二章：经验值与等级</a><a href="#第三章-死亡与复活">第三章：死亡与复活</a><a href="#第四章-灵廊">第四章：灵廊</a><a href="#第五章-负重与移动">第五章：负重与移动</a><a href="#第七章-意志与疯狂">第七章：意志与疯狂</a><a href="#第八章-契约与晋升">第八章：契约与晋升</a></nav><h2 id="第一章-角色创建与属性">第一章：角色创建与属性</h2>
-<h3>👤 玩家类型与异界者设定</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">角色创建</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">玩家角色类型</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">一周目</span>：<span class="y-v">&quot;必须是异界者（穿越者）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">二周目</span>：<span class="y-v">&quot;可以是恩格海姆本土原住民执契者（需跑完第一部所有卷后解锁）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">异界者</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">定义</span>：<span class="y-v">&quot;被神秘的未知之力感召拉入恩格海姆的异界灵魂&quot;</span></div>
-<div class="y-p" style="padding-left:0px"></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">苏醒地点</span>：<span class="y-v">&quot;灵廊&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">初始状态</span>：<span class="y-v">&quot;保留穿越前的完整记忆，对恩格海姆一无所知&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">身份秘密</span>：<span class="y-v">&quot;异界者身份在恩格海姆是秘密，只有雕刻家知道&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">契约缔结</span>：<span class="y-v">&quot;在灵廊中首次触碰契约符号时即缔结契约，成为7阶执契者&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">初始契约</span>：<span class="y-v">&quot;从54种契约中任选一种&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">与原住民区别</span>：<span class="y-v">&quot;进入恩格海姆时已是7阶执契者，但需自行探索晋升所需材料的来源&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">本土原住民（二周目可选）</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:16px">▪ &quot;可以在教派中研习、成长，逐步晋升阶位&quot;</div>
-</div>
-<h3>💎 核心属性系统（70 点分配制）</h3>
-<h4>规则说明</h4>
+<h2 id="第一章-角色创建与属性">第一章：角色创建与属性</h2>
+<h3 id="玩家类型与异界者设定">👤 玩家类型与异界者设定</h3>
+<div class="yaml-block"><h3 class="ysub">玩家角色类型</h3><div class="ycard"><div class="ykv"><span class="ykey">一周目</span><span class="yval">必须是异界者（穿越者）</span></div><div class="ykv"><span class="ykey">二周目</span><span class="yval">可以是恩格海姆本土原住民执契者（需跑完第一部所有卷后解锁）</span></div></div><h3 class="ysub">异界者</h3><div class="ycard"><div class="ykv"><span class="ykey">定义</span><span class="yval">被神秘的未知之力感召拉入恩格海姆的异界灵魂</span></div><p class="yp"></p><div class="ykv"><span class="ykey">苏醒地点</span><span class="yval">灵廊</span></div><div class="ykv"><span class="ykey">初始状态</span><span class="yval">保留穿越前的完整记忆，对恩格海姆一无所知</span></div><div class="ykv"><span class="ykey">身份秘密</span><span class="yval">异界者身份在恩格海姆是秘密，只有雕刻家知道</span></div><div class="ykv"><span class="ykey">契约缔结</span><span class="yval">在灵廊中首次触碰契约符号时即缔结契约，成为7阶执契者</span></div><div class="ykv"><span class="ykey">初始契约</span><span class="yval">从54种契约中任选一种</span></div><div class="ykv"><span class="ykey">与原住民区别</span><span class="yval">进入恩格海姆时已是7阶执契者，但需自行探索晋升所需材料的来源</span></div></div><h3 class="ysub">本土原住民（二周目可选）</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">可以在教派中研习、成长，逐步晋升阶位</span></div></div></div>
+<h3 id="核心属性系统-70-点分配制">💎 核心属性系统（70 点分配制）</h3>
+<h4 id="规则说明">规则说明</h4>
 <ul><li><strong>点数分配型</strong>：初始可用总点数为 <strong>70</strong>。</li><li><strong>单项范围</strong>：每项属性初始值可在 <strong>5 至 18 点</strong> 之间自由选择。</li><li><strong>升级加点</strong>：每升 1 级获得 <strong>2 点</strong> 自由属性点，可分配到任意属性上。</li></ul>
-<h4>七大核心属性表</h4>
+<h4 id="七大核心属性表">七大核心属性表</h4>
 <table><tr><th><strong>属性</strong></th><th><strong>主要影响范围</strong></th><th><strong>HP/MP 加成贡献</strong></th><th><strong>推荐倾向</strong></th></tr><tr><td>💪 <strong>力量</strong></td><td>近战攻击、负重、物理破坏</td><td>+2 HP / 每点</td><td>战士型 / 坦克型</td></tr><tr><td>🏃 <strong>敏捷</strong></td><td>先手顺序、闪避、远程攻击、精细操作</td><td>—</td><td>游侠型 / 刺客型</td></tr><tr><td>🛡️ <strong>体魄</strong></td><td>生命值上限、耐力、抗毒抗病</td><td>+5 HP / 每点</td><td>高生存 / 持久战</td></tr><tr><td>📏 <strong>体型</strong></td><td>负重能力、部分物理判定</td><td>+5 负重 / 每点</td><td>重甲 / 强攻</td></tr><tr><td>🧠 <strong>意志</strong></td><td>精神抗性、契约稳定性、情绪抵抗</td><td>+2 MP / 每点</td><td>法系 / 精神防御</td></tr><tr><td>👁️ <strong>灵感</strong></td><td>察觉陷阱、观察细节、预感危险</td><td>—</td><td>侦查 / 策略型</td></tr><tr><td>🔮 <strong>灵力</strong></td><td>契约魔法威力、持续时间、冷却缩减</td><td>+5 MP / 每点</td><td>纯法系 / 爆发型</td></tr></table>
-<h4>❤️ HP 与 💠 MP 计算机制</h4>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">HP 计算公式</span>：<span class="y-v">体魄 × 5 + 力量 × 2</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">MP 计算公式</span>：<span class="y-v">灵力 × 5 + 意志 × 2</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">示例（均衡战士型）</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">体魄</span>：<span class="y-v">10 → +50 HP</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">力量</span>：<span class="y-v">8  → +16 HP</span></div>
-<div class="y-p" style="padding-left:0px">──────────────</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">初始 HP</span>：<span class="y-v">66</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵力</span>：<span class="y-v">12 → +60 MP</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">意志</span>：<span class="y-v">10 → +20 MP</span></div>
-<div class="y-p" style="padding-left:0px">──────────────</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">初始 MP</span>：<span class="y-v">80</span></div>
-</div>
+<h4 id="HP-与-MP-计算机制">❤️ HP 与 💠 MP 计算机制</h4>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">HP 计算公式</span><span class="yval">体魄 × 5 + 力量 × 2</span></div><div class="ykv"><span class="ykey">MP 计算公式</span><span class="yval">灵力 × 5 + 意志 × 2</span></div></div><h3 class="ysub">示例（均衡战士型）</h3><div class="ycard"><div class="ykv"><span class="ykey">体魄</span><span class="yval">10 → +50 HP</span></div><div class="ykv"><span class="ykey">力量</span><span class="yval">8  → +16 HP</span></div><p class="yp">──────────────</p><div class="ykv"><span class="ykey">初始 HP</span><span class="yval">66</span></div><div class="ykv"><span class="ykey">灵力</span><span class="yval">12 → +60 MP</span></div><div class="ykv"><span class="ykey">意志</span><span class="yval">10 → +20 MP</span></div><p class="yp">──────────────</p><div class="ykv"><span class="ykey">初始 MP</span><span class="yval">80</span></div></div></div>
 <hr>
 <h2 id="第二章-经验值与等级">第二章：经验值与等级</h2>
-<h3>⭐ 升级系统</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">对外名称</span>：<span class="y-v">&quot;经验值&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵廊内部名称</span>：<span class="y-v">&quot;经历&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">内部名称说明</span>：<span class="y-v">&gt;</span></div>
-<div class="y-p" style="padding-left:0px">对于已经接近疯狂的雕刻家，他需要别人的经历来让自己清醒。</div>
-<div class="y-p" style="padding-left:0px">这种并不是摘取，算是同步。对玩家来说，可能是一段记忆，但不会抽取，</div>
-<div class="y-p" style="padding-left:0px">而是类似被复制。记忆没有丢失，但会同步给他一份。</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">获取方式</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;战斗获取：击败魔物或敌对执契者，强度越高获得越多&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;任务获取：完成主线/支线任务获得固定经验值奖励&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;探索/发现获取：首次到达新地点、发现隐藏区域、解开谜题时获得&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">用途</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;提升玩家等级（每次升级获得 2 点自由属性点）&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;死亡时扣除（见死亡章节）&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;在灵廊中作为与雕刻家交易的货币（用于购买种子、服务等）&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">等级提升</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">属性奖励</span>：<span class="y-v">&quot;每升 1 级获得 2 点属性，可自由分配到任意属性上&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">契约阶位</span>：<span class="y-v">&quot;等级与契约阶位独立，互不影响（如 5 级可能是 4 阶契约者）&quot;</span></div>
-</div>
+<h3 id="升级系统">⭐ 升级系统</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">对外名称</span><span class="yval">经验值</span></div><div class="ykv"><span class="ykey">灵廊内部名称</span><span class="yval">经历</span></div><div class="ykv"><span class="ykey">内部名称说明</span><span class="yval">&gt;</span></div><p class="yp">对于已经接近疯狂的雕刻家，他需要别人的经历来让自己清醒。</p><p class="yp">这种并不是摘取，算是同步。对玩家来说，可能是一段记忆，但不会抽取，</p><p class="yp">而是类似被复制。记忆没有丢失，但会同步给他一份。</p></div><h3 class="ysub">获取方式</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;战斗获取</span><span class="yval">击败魔物或敌对执契者，强度越高获得越多&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;任务获取</span><span class="yval">完成主线/支线任务获得固定经验值奖励&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;探索/发现获取</span><span class="yval">首次到达新地点、发现隐藏区域、解开谜题时获得&quot;</span></div></div><h3 class="ysub">用途</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">提升玩家等级（每次升级获得 2 点自由属性点）</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">死亡时扣除（见死亡章节）</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">在灵廊中作为与雕刻家交易的货币（用于购买种子、服务等）</span></div></div><h3 class="ysub">等级提升</h3><div class="ycard"><div class="ykv"><span class="ykey">属性奖励</span><span class="yval">每升 1 级获得 2 点属性，可自由分配到任意属性上</span></div><div class="ykv"><span class="ykey">契约阶位</span><span class="yval">等级与契约阶位独立，互不影响（如 5 级可能是 4 阶契约者）</span></div></div></div>
 <hr>
 <h2 id="第三章-死亡与复活">第三章：死亡与复活</h2>
-<h3>☠️ 死亡判定与复活流程</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">死亡判定</span>：<span class="y-v">&quot;当 HP 降至 0 时，角色死亡&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">死亡流程</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">原地</span>：<span class="y-v">&quot;身体被幽蓝色火焰焚烧，灵魂在灵廊中重新凝聚&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵廊</span>：<span class="y-v">&quot;灵廊中有一扇对应的门自动打开，主角需要找到并穿过这扇门，返回恩格海姆的正确位置&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">雕刻家</span>：<span class="y-v">&quot;此时雕刻家沉默放行&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">死亡惩罚</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">经验值扣除</span>：<span class="y-v">&quot;每次死亡扣除当前经验值的 20%&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">掉阶</span>：<span class="y-v">&quot;若经验值不足扣除，直接下降一阶（契约等级降 1 级）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">虚弱状态</span>：<span class="y-v">&quot;回归灵廊时仅保留 1/3 当前 HP（非上限），离开灵廊时同样处于虚弱期&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">非死亡进出灵廊</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;通过契约 &#x27;灵廊&#x27; 主动返回时，数值不做改变，消耗不做限制&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;非死亡状态下正常离开，保持进入时的状态&quot;</div>
-</div>
+<h3 id="死亡判定与复活流程">☠️ 死亡判定与复活流程</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">死亡判定</span><span class="yval">当 HP 降至 0 时，角色死亡</span></div></div><h3 class="ysub">死亡流程</h3><div class="ycard"><div class="ykv"><span class="ykey">原地</span><span class="yval">身体被幽蓝色火焰焚烧，灵魂在灵廊中重新凝聚</span></div><div class="ykv"><span class="ykey">灵廊</span><span class="yval">灵廊中有一扇对应的门自动打开，主角需要找到并穿过这扇门，返回恩格海姆的正确位置</span></div><div class="ykv"><span class="ykey">雕刻家</span><span class="yval">此时雕刻家沉默放行</span></div></div><h3 class="ysub">死亡惩罚</h3><div class="ycard"><div class="ykv"><span class="ykey">经验值扣除</span><span class="yval">每次死亡扣除当前经验值的 20%</span></div><div class="ykv"><span class="ykey">掉阶</span><span class="yval">若经验值不足扣除，直接下降一阶（契约等级降 1 级）</span></div><div class="ykv"><span class="ykey">虚弱状态</span><span class="yval">回归灵廊时仅保留 1/3 当前 HP（非上限），离开灵廊时同样处于虚弱期</span></div></div><h3 class="ysub">非死亡进出灵廊</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">通过契约 &#x27;灵廊&#x27; 主动返回时，数值不做改变，消耗不做限制</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">非死亡状态下正常离开，保持进入时的状态</span></div></div></div>
 <hr>
 <h2 id="第四章-灵廊">第四章：灵廊</h2>
-<h3>🌀 核心据点与避难所</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">概述</span>：<span class="y-v">&quot;灵廊是玩家的核心据点，是暂时脱离恩格海姆纷争的避风港&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">所有权</span>：<span class="y-v">&quot;玩家独有特权，任何NPC都不能进入（雕刻家除外）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">进入方式</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;死亡后强制进入&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;通过契约 &#x27;灵廊&#x27; 主动进入（每日可使用 1 次，需5分钟生成黑色传送门）&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;偶尔被雕刻家剧情召回&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵廊功能</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;有限探索：除雕刻家据点外，存在可探索的迷雾区域&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;战斗：灵廊内可以战斗，但会受到雕刻家严厉惩罚&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;灵契武装打造：后期开放，由雕刻家打造超越神话级的装备&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;契约修改：仅限一次，让玩家重新选择初始契约，新契约从头开始&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;种田空间：玩家拥有一片专属种植空间&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;雕刻家交互：对话获取情报（初期疯癫无法交流，随任务推进逐渐解锁）&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵廊战斗惩罚</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">触发</span>：<span class="y-v">&quot;雕刻家出手干预，双方暂时失去所有行动能力&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">代价</span>：<span class="y-v">&quot;扣除当前意志值的 50%，陷入虚弱持续游戏内 1 天&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">功能影响</span>：<span class="y-v">&quot;灵廊内所有功能暂时禁用（无法使用传送门、种植等）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">长时间停留副作用</span>：<span class="y-v">&quot;会让自己陷入一种虚无幻觉，需定期返回现实世界&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">灵廊深处</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">结构</span>：<span class="y-v">&quot;无限层，越深入资源品质越高，但意志点数与契约阶位要求递增&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">特征</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:16px">▪ &quot;时间流速与外界不同，越深处越缓慢&quot;</div>
-<div class="y-li" style="padding-left:16px">▪ &quot;残留多次坍塌前的契约规则片段&quot;</div>
-<div class="y-li" style="padding-left:16px">▪ &quot;存在回响实体（契约规则过度沉积产生的半意识体）&quot;</div>
-</div>
+<h3 id="核心据点与避难所">🌀 核心据点与避难所</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">概述</span><span class="yval">灵廊是玩家的核心据点，是暂时脱离恩格海姆纷争的避风港</span></div><div class="ykv"><span class="ykey">所有权</span><span class="yval">玩家独有特权，任何NPC都不能进入（雕刻家除外）</span></div></div><h3 class="ysub">进入方式</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">死亡后强制进入</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">通过契约 &#x27;灵廊&#x27; 主动进入（每日可使用 1 次，需5分钟生成黑色传送门）</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">偶尔被雕刻家剧情召回</span></div></div><h3 class="ysub">灵廊功能</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;有限探索</span><span class="yval">除雕刻家据点外，存在可探索的迷雾区域&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;战斗</span><span class="yval">灵廊内可以战斗，但会受到雕刻家严厉惩罚&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;灵契武装打造</span><span class="yval">后期开放，由雕刻家打造超越神话级的装备&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;契约修改</span><span class="yval">仅限一次，让玩家重新选择初始契约，新契约从头开始&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;种田空间</span><span class="yval">玩家拥有一片专属种植空间&quot;</span></div><div class="yli"><span class="ybullet">▸</span><span class="ykey">&quot;雕刻家交互</span><span class="yval">对话获取情报（初期疯癫无法交流，随任务推进逐渐解锁）&quot;</span></div></div><h3 class="ysub">灵廊战斗惩罚</h3><div class="ycard"><div class="ykv"><span class="ykey">触发</span><span class="yval">雕刻家出手干预，双方暂时失去所有行动能力</span></div><div class="ykv"><span class="ykey">代价</span><span class="yval">扣除当前意志值的 50%，陷入虚弱持续游戏内 1 天</span></div><div class="ykv"><span class="ykey">功能影响</span><span class="yval">灵廊内所有功能暂时禁用（无法使用传送门、种植等）</span></div><div class="ykv"><span class="ykey">长时间停留副作用</span><span class="yval">会让自己陷入一种虚无幻觉，需定期返回现实世界</span></div></div><h3 class="ysub">灵廊深处</h3><div class="ycard"><div class="ykv"><span class="ykey">结构</span><span class="yval">无限层，越深入资源品质越高，但意志点数与契约阶位要求递增</span></div></div><h3 class="ysub">特征</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">时间流速与外界不同，越深处越缓慢</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">残留多次坍塌前的契约规则片段</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">存在回响实体（契约规则过度沉积产生的半意识体）</span></div></div></div>
 <hr>
 <h2 id="第五章-负重与移动">第五章：负重与移动</h2>
-<h3>🎒 负重限制与机动性</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">负重上限计算</span>：<span class="y-v">&quot;力量 × 4 + 体魄 × 2 + 体型 × 5 （单位：磅）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">超重惩罚</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">超出 10%</span>：<span class="y-v">&quot;降低移动速度&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">超出 20%</span>：<span class="y-v">&quot;降低全属性（具体幅度由 DM 裁定）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">超出 30%</span>：<span class="y-v">&quot;进一步加重惩罚（如战斗劣势、无法奔跑等）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">超出 50%</span>：<span class="y-v">&quot;完全无法行动（只能爬行或依靠他人拖拽）&quot;</span></div>
-</div>
+<h3 id="负重限制与机动性">🎒 负重限制与机动性</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">负重上限计算</span><span class="yval">力量 × 4 + 体魄 × 2 + 体型 × 5 （单位：磅）</span></div></div><h3 class="ysub">超重惩罚</h3><div class="ycard"><div class="ykv"><span class="ykey">超出 10%</span><span class="yval">降低移动速度</span></div><div class="ykv"><span class="ykey">超出 20%</span><span class="yval">降低全属性（具体幅度由 DM 裁定）</span></div><div class="ykv"><span class="ykey">超出 30%</span><span class="yval">进一步加重惩罚（如战斗劣势、无法奔跑等）</span></div><div class="ykv"><span class="ykey">超出 50%</span><span class="yval">完全无法行动（只能爬行或依靠他人拖拽）</span></div></div></div>
 <hr>
 <h2 id="第七章-意志与疯狂">第七章：意志与疯狂</h2>
-<h3>🧠 精神抗性阈值</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">意志属性</span>：<span class="y-v">&quot;独立属性，由玩家自由分配初始点数&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">临时意志扣除场景</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;目睹不可名状之物（深渊、神祇、异界生物等）&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;长时间处于诡异环境&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;受到特定精神攻击契约&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;签订超出自身阶位的高阶契约&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">注意</span>：<span class="y-v">&quot;扣除的是临时意志总值，不会永久降低基础属性，身处灵廊不会扣除意志&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">疯狂阈值</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">幻觉</span>：<span class="y-v">&quot;当前临时意志扣除至总值一半时触发，出现轻度幻听/幻视&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">癫狂</span>：<span class="y-v">&quot;当前临时意志扣除至总值三分之二时触发，理智崩坏，开始胡言乱语或攻击随机目标&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">安抚与恢复</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;需要心理治疗（RP演绎或使用特定道具/NPC）&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;可由少数特定契约完成，如 &#x27;影中梦&#x27;&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;意志自然恢复速度由 DM 根据情况设定&quot;</div>
-</div>
+<h3 id="精神抗性阈值">🧠 精神抗性阈值</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">意志属性</span><span class="yval">独立属性，由玩家自由分配初始点数</span></div></div><h3 class="ysub">临时意志扣除场景</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">目睹不可名状之物（深渊、神祇、异界生物等）</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">长时间处于诡异环境</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">受到特定精神攻击契约</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">签订超出自身阶位的高阶契约</span></div><div class="ykv"><span class="ykey">注意</span><span class="yval">扣除的是临时意志总值，不会永久降低基础属性，身处灵廊不会扣除意志</span></div></div><h3 class="ysub">疯狂阈值</h3><div class="ycard"><div class="ykv"><span class="ykey">幻觉</span><span class="yval">当前临时意志扣除至总值一半时触发，出现轻度幻听/幻视</span></div><div class="ykv"><span class="ykey">癫狂</span><span class="yval">当前临时意志扣除至总值三分之二时触发，理智崩坏，开始胡言乱语或攻击随机目标</span></div></div><h3 class="ysub">安抚与恢复</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">需要心理治疗（RP演绎或使用特定道具/NPC）</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">可由少数特定契约完成，如 &#x27;影中梦&#x27;</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">意志自然恢复速度由 DM 根据情况设定</span></div></div></div>
 <p>神名扣减:</p>
 <p>规则: &quot;神明真名不可念诵——每念诵一次神名（如‘（真名不载）’、‘（真名不载）’），立即扣除意志值&quot;</p>
 <p>扣减: &quot;默认每次 1d4 点临时意志（DM 可按神格高低调整）&quot;</p>
 <p>说明: &quot;故凡人只以称号或化名称呼神明，绝不直呼其真名&quot;</p>
 <hr>
 <h2 id="第八章-契约与晋升">第八章：契约与晋升</h2>
-<h3>📜 54 种契约体系</h3>
-<div class="kv">
-<div class="y-row" style="padding-left:0px"><span class="y-k">契约种类</span>：<span class="y-v">&quot;54 种，分为 9 大类（详见《契约图鉴笔记》）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">初始选择</span>：<span class="y-v">&quot;玩家初入灵廊时从 54 种中任选一种作为本命契约&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">签订规则</span>：<span class="y-v"></span></div>
-<div class="y-li" style="padding-left:8px">▪ &quot;执契者可以签订任何阶位的契约&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;契约的阶位代表自己对契约的领悟和使用程度&quot;</div>
-<div class="y-li" style="padding-left:8px">▪ &quot;普通人一般只能持有一个契约，再次签订会消耗材料但契约不会生效（除非有雕刻家介入）&quot;</div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">高阶契约风险</span>：<span class="y-v">&quot;普通人等级不高，即便签订高阶契约，也会因意志或体魄不足而陷入疯狂&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">晋升方式</span>：<span class="y-v"></span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">核心机制</span>：<span class="y-v">&quot;收集特定契约材料进行献祭（不需要打副本试炼）&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">材料来源</span>：<span class="y-v">[&quot;魔物掉落&quot;, &quot;探索采集&quot;, &quot;商会购买（里斯特商会为主要渠道）&quot;, &quot;任务奖励&quot;]</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">研究来源</span>：<span class="y-v">&quot;每种契约进阶所需材料由&#x27;塔罗斯契约研究院&#x27;公开研究&quot;</span></div>
-<div class="y-row" style="padding-left:0px"><span class="y-k">雕刻家特殊事件</span>：<span class="y-v">&quot;剧情中期触发，完成特定任务线后，玩家可以拥有第二种契约&quot;</span></div>
-</div>
+<h3 id="54-种契约体系">📜 54 种契约体系</h3>
+<div class="yaml-block"><div class="ycard"><div class="ykv"><span class="ykey">契约种类</span><span class="yval">54 种，分为 9 大类（详见《契约图鉴笔记》）</span></div><div class="ykv"><span class="ykey">初始选择</span><span class="yval">玩家初入灵廊时从 54 种中任选一种作为本命契约</span></div></div><h3 class="ysub">签订规则</h3><div class="ycard"><div class="yli"><span class="ybullet">▸</span><span class="yval">执契者可以签订任何阶位的契约</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">契约的阶位代表自己对契约的领悟和使用程度</span></div><div class="yli"><span class="ybullet">▸</span><span class="yval">普通人一般只能持有一个契约，再次签订会消耗材料但契约不会生效（除非有雕刻家介入）</span></div><div class="ykv"><span class="ykey">高阶契约风险</span><span class="yval">普通人等级不高，即便签订高阶契约，也会因意志或体魄不足而陷入疯狂</span></div></div><h3 class="ysub">晋升方式</h3><div class="ycard"><div class="ykv"><span class="ykey">核心机制</span><span class="yval">收集特定契约材料进行献祭（不需要打副本试炼）</span></div><div class="ykv"><span class="ykey">材料来源</span><span class="yval">[&quot;魔物掉落&quot;, &quot;探索采集&quot;, &quot;商会购买（里斯特商会为主要渠道）&quot;, &quot;任务奖励&quot;]</span></div><div class="ykv"><span class="ykey">研究来源</span><span class="yval">每种契约进阶所需材料由&#x27;塔罗斯契约研究院&#x27;公开研究</span></div><div class="ykv"><span class="ykey">雕刻家特殊事件</span><span class="yval">剧情中期触发，完成特定任务线后，玩家可以拥有第二种契约</span></div></div></div>
 <hr>
-</div></div>
+</div></div></div>
 <div class="footer">《光幕之下》世界设定百科 · 恩格海姆</div>
 <script src="assets/script.js"></script>
 </body></html>
