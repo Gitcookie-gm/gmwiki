@@ -53,3 +53,28 @@
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);
 })();
+
+// 侧栏目录：滚动高亮当前章节
+(function () {
+  function init() {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+    if (!links.length) return;
+    var map = {}, hs = [];
+    links.forEach(function (a) {
+      var id = decodeURIComponent((a.getAttribute('href') || '').slice(1));
+      var el = document.getElementById(id);
+      if (el) { map[id] = a; hs.push(el); }
+    });
+    function onScroll() {
+      var y = window.scrollY + 130, cur = null;
+      hs.forEach(function (el) { if (el.offsetTop <= y) cur = el.id; });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (cur && map[cur]) map[cur].classList.add('active');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init);
+})();
