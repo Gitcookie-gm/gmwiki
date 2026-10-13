@@ -511,7 +511,7 @@ mark{background:rgba(228,196,140,.24);color:var(--gold);border-radius:2px;paddin
 .pc-tag{font-size:.68rem;letter-spacing:1px;color:var(--gold-dim);border:1px solid var(--panel-border);
   border-radius:20px;padding:.06rem .55rem;margin-left:.5rem;vertical-align:middle;white-space:nowrap}
 .pc-sub{color:var(--text-dim);font-size:.82rem;margin-bottom:.85rem;padding-bottom:.7rem;border-bottom:1px solid var(--panel-border)}
-.pc-attrs{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem;margin-bottom:.85rem}
+.pc-attrs{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin-bottom:.85rem}
 .pc-attr{background:rgba(255,255,255,.028);border:1px solid var(--panel-border);border-radius:10px;padding:.42rem .25rem;text-align:center}
 .pc-attr b{display:block;color:var(--text);font-size:.98rem;font-family:'Cinzel','Noto Serif SC',serif}
 .pc-attr span{font-size:.68rem;color:var(--text-dim)}
@@ -572,7 +572,7 @@ mark{background:rgba(228,196,140,.24);color:var(--gold);border-radius:2px;paddin
 .tb-cur{flex:none;font-family:'Cinzel','Noto Serif SC',serif;font-size:.98rem;letter-spacing:1.6px;
   color:var(--tab-active);padding-right:.95rem;border-right:1px solid var(--panel-border);white-space:nowrap}
 .tb-cur:hover{color:var(--gold);text-decoration:none}
-.topnav{display:flex;flex-wrap:wrap;gap:.3rem;flex:1;align-items:center}
+.topnav{display:flex;flex-wrap:wrap;gap:.3rem;flex:1;align-items:center;justify-content:center;margin-left:auto;margin-right:auto}
 .tnav{display:inline-flex;align-items:center;padding:.24rem .68rem;border:1px solid var(--panel-border);
   border-radius:20px;color:var(--tab-inactive);font-size:.76rem;letter-spacing:.3px;white-space:nowrap;
   background:rgba(255,255,255,.02);transition:background .15s,color .15s,border-color .15s}
@@ -607,3 +607,56 @@ mark{background:rgba(228,196,140,.24);color:var(--gold);border-radius:2px;paddin
 .pagenav .pn-ph{flex:0 0 auto}
 .topnav.locked-nav{display:none}
 .footer .build-stamp{display:block;margin-top:.35rem;font-size:.72rem;color:var(--text-dim);letter-spacing:1px;opacity:.75}
+.tnav-grp{align-self:center;font-size:.7rem;letter-spacing:1.5px;color:var(--gold-dim);
+  padding:.16rem .5rem .16rem .6rem;margin-left:.35rem;border-left:1px solid var(--panel-border);white-space:nowrap}
+.topnav .tnav-grp:first-child{border-left:none;margin-left:0}
+@media(max-width:820px){.topnav{justify-content:flex-start}}
+
+
+/* ================= 契约技能树（图标树） ================= */
+
+.st-legend{display:flex;flex-wrap:wrap;gap:.25rem .7rem;padding:.5rem .1rem .7rem;border-bottom:1px dashed #2f2a36;margin-bottom:.9rem}
+.st-legend .lg{display:inline-flex;align-items:center;gap:.28rem;font-size:.7rem;color:#8a7e6e}
+.st-tree{display:flex;flex-direction:column;gap:.4rem}
+.st-row{display:grid;grid-template-columns:58px 1fr;align-items:center;gap:.7rem}
+.st-lv{text-align:center;font-family:Cinzel,serif;color:#b89e7a;border-right:1px solid #2f2a36;padding-right:.55rem}
+.st-lv b{display:block;font-size:1.2rem;line-height:1.1;color:#e4c48c}
+.st-lv span{font-size:.62rem;letter-spacing:2px;color:#8a7e6e}
+.st-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.st-node{display:grid;grid-template-columns:22px 1fr;grid-template-rows:auto auto;gap:.05rem .45rem;
+ padding:.4rem .5rem;border:1px solid #2f2a36;border-radius:9px;background:rgba(255,255,255,.02)}
+.st-node .st-ic{grid-row:1/3;align-self:center;display:inline-flex;color:#b89e7a}
+.st-tag{font-size:.68rem;letter-spacing:.4px;color:#e4c48c}
+.st-eff{font-size:.76rem;color:#e6ddd0;opacity:.9;line-height:1.5}
+.st-row.hi .st-node{border-color:rgba(228,196,140,.42);background:rgba(228,196,140,.05)}
+.st-node.t-up .st-ic{color:#e0b463}.st-node.t-area .st-ic{color:#6fa8dc}.st-node.t-dur .st-ic{color:#8fbf7a}
+.st-node.t-spd .st-ic{color:#d98cc0}.st-node.t-extra .st-ic{color:#c9a0e0}.st-node.t-def .st-ic{color:#7fa8d8}
+.st-node.t-atk .st-ic{color:#dd8a7a}.st-node.t-cross .st-ic{color:#e07a6a}.st-node.t-cross .st-tag{color:#e07a6a}
+.st-card .st-legend,.st-card .st-tree{font-family:'Noto Serif SC',Georgia,serif}
+details .st-tree{margin-top:.5rem}
+
+/* 契约卡内为窄列：三项改为纵向排布 */
+.fig-card .st-row{grid-template-columns:46px 1fr;gap:.5rem}
+.fig-card .st-opts{grid-template-columns:1fr;gap:.35rem}
+.fig-card .st-eff{font-size:.74rem}
+.fig-card .st-lv b{font-size:1.05rem}
+.fig-ladder summary i{font-style:normal;color:#8a7e6e;font-size:.85em}
+
+
+/* 技能树缩略条 */
+
+.st-mini{display:flex;gap:3px;margin:.45rem 0 .65rem;padding:.35rem .3rem;border:1px solid #2f2a36;
+ border-radius:8px;background:rgba(255,255,255,.02)}
+.stm-col{display:flex;flex-direction:column;flex:1;min-width:0}
+.stm-cells{display:flex;flex-direction:column;gap:2px}
+.stm{height:8px;border-radius:2px;background:#3a3344;display:block;transition:.15s}
+.stm:hover{outline:1px solid #e4c48c;outline-offset:1px}
+.stm-lv{font-size:.58rem;color:#8a7e6e;text-align:center;margin-top:2px;font-family:Cinzel,serif}
+.stm.t-up{background:#e0b463}.stm.t-area{background:#6fa8dc}.stm.t-dur{background:#8fbf7a}
+.stm.t-spd{background:#d98cc0}.stm.t-extra{background:#c9a0e0}.stm.t-def{background:#7fa8d8}
+.stm.t-atk{background:#dd8a7a}.stm.t-cross{background:#e07a6a}
+.st-mini-legend{display:flex;flex-wrap:wrap;gap:.2rem .7rem;margin:.3rem 0 .9rem;font-size:.68rem;color:#8a7e6e}
+.st-mini-legend span{display:inline-flex;align-items:center;gap:.25rem}
+.st-mini-legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
+
+.fig-mp{margin-left:.7rem;color:#b89e7a;font-weight:600}
