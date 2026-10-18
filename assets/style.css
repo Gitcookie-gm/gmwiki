@@ -520,6 +520,8 @@ mark{background:rgba(228,196,140,.24);color:var(--gold);border-radius:2px;paddin
 .pc-der span{font-size:.76rem;color:var(--text-dim);background:rgba(255,255,255,.03);
   border:1px solid var(--panel-border);border-radius:8px;padding:.16rem .5rem}
 .pc-der b{color:var(--gold);font-weight:500}
+.pc-look{font-size:.76rem;color:var(--text-dim);line-height:1.7;margin:.15rem 0 .75rem;padding-left:.6rem;border-left:2px solid var(--panel-border)}
+.pc-look b{color:var(--gold-dim);font-weight:500;margin-right:.4rem;font-size:.72rem;letter-spacing:1px}
 .pc-skills{display:flex;flex-wrap:wrap;gap:.4rem}
 .pc-skills span{font-size:.78rem;color:var(--gold-dim);border:1px dashed var(--panel-border);border-radius:20px;padding:.14rem .62rem}
 .pc-note{margin-top:.85rem;font-size:.78rem;color:var(--text-dim);line-height:1.7;
