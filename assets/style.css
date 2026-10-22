@@ -696,3 +696,22 @@ details .st-tree{margin-top:.5rem}
   .tm-panel{grid-template-columns:1fr;width:min(92vw,420px);max-height:70vh}
   .tmenu{max-width:none}
 }
+
+/* ================= 第一卷 · 崖镇 NPC 卡 ================= */
+.npc-card{display:grid;grid-template-columns:190px minmax(0,1fr);gap:1.6rem;align-items:start;
+  background:linear-gradient(150deg,#1a1720,#141119);border:1px solid var(--card-border);
+  border-radius:22px;padding:1.3rem 1.5rem;margin:1.2rem 0 2rem}
+.npc-art img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;
+  border:1px solid var(--card-border);display:block;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.npc-name{font-size:1.4rem;color:var(--tab-active);letter-spacing:2px}
+.npc-name em{font-style:normal;font-size:.72rem;letter-spacing:.3em;color:var(--gold-dim);margin-left:.8rem}
+.npc-sub{font-size:.82rem;color:var(--text-dim);letter-spacing:.5px;margin:.35rem 0 .8rem}
+.npc-quote{font-size:1rem;color:var(--gold);border-left:2px solid var(--gold-dim);
+  padding-left:.8rem;margin:.6rem 0 1rem;line-height:1.7}
+.npc-kv{display:flex;flex-direction:column;gap:.35rem}
+.npc-row{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:.8rem;font-size:.86rem;
+  padding:.35rem 0;border-bottom:1px dashed rgba(255,255,255,.06)}
+.npc-row span{color:var(--text-dim);letter-spacing:1px}
+.npc-row b{color:var(--text);font-weight:400;line-height:1.6}
+.npc-note{font-size:.84rem;color:var(--text-dim);margin-top:.9rem;line-height:1.75}
+@media(max-width:820px){.npc-card{grid-template-columns:1fr}.npc-art{max-width:220px}}
